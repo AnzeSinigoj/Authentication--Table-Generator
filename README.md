@@ -1,2 +1,2 @@
-# Legitimation-Table-Generator
-A simple program to generate multiple series of legitimation tables.
+# Authentication -Table-Generator
+A simple program to generate multiple series of authentication tables.
