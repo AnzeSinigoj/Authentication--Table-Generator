@@ -5,7 +5,7 @@
 
 using namespace std;
 
-string vodKos[] = {" ","A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"};
+string vodKos[] = {" ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"};
 string navKos[] = {"N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
 string tab;
 
@@ -13,10 +13,9 @@ void genAuthTab(int dolz)
 {
     tab = "";
 
-
     for (auto i : vodKos)
     {
-        tab.append(i+" ");
+        tab.append(i + " ");
     }
     tab.append("\n");
 
@@ -34,7 +33,7 @@ void genAuthTab(int dolz)
                 }
                 else
                 {
-                    tab.append(1, static_cast<char>('a' + rand() % 26));
+                    tab.append(1, static_cast<char>('A' + rand() % 26));
                 }
             }
             tab.append(" ");
@@ -69,5 +68,10 @@ int main()
             cout << tab << "\n\n";
         }
     }
+
+    cout << "Press ENTER to exit...";
+    cin.ignore();
+    cin.get();
+
     return 0;
 }
